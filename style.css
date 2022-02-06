@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Source+Serif+4:wght@500&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #691414;
+}
+
+body {
+    background-image: url(images/cake.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h1, #hashtag {
+    font-family: 'Birthstone Bounce', cursive;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+#hashtag {
+    font-size: 3em;
+}
+
+#countdown {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+}
+
+#countdown, #date {
+    font-family: 'Source Serif 4', sans-serif;
+    color: #000;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.wrapper-circle {
+    background-color: aliceblue;
+    border-radius: 100px;
+    padding: 5%;
+    opacity: 0.8;
+}
+
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url(images/heart.gif) no-repeat center center;
+}
+
+@media only screen and (max-width:450px) {
+    
+    h1 {
+        font-size: 4em;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #countdown, #hashtag {
+        font-size: 2em;
+    }
+
+    .wrapper-circle {
+        margin: 10px;
+    }
+}
